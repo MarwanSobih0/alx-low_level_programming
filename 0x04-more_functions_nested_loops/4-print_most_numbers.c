@@ -1,23 +1,16 @@
 #include "main.h"
 
 /**
- * print_most_numbers - prints numbers
- * Return:0
+ * _isalpha - check for lower case letter
+ * @c : character to check
+ * Return:0 or 1
  */
 
-void print_most_numbers(void)
+int _isalpha(int c)
 {
-	char n = 0;
-
-	while (n <= 9)
-	{
-		if (n != 2 && n != 4 )
-		{
-			_putchar('0' + n);
-		}
-
-		n++;
-	}
-	_putchar('\n');
-
+	if ((c >= 65 && c <= 97) || (c >= 97 && c <= 122))
+{
+return (1);
+}
+return (0);
 }
